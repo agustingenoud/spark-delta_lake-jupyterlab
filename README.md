@@ -3,7 +3,7 @@
 Build from scratch docker images from the Dockerfiles.
 Create a Spark cluster (1 Main + 2 Workers) and a Jupyter Lab interface.
 
-- on a terminal
+### Go to a terminal
 
 Enter directory
 
