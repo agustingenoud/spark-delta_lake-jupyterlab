@@ -5,9 +5,11 @@ Create a Spark cluster (1 Main + 2 Workers) and a Jupyter Lab interface.
 
 - on a terminal
 
-Enter directory and make file executable
+Enter directory
 
     cd 00-build-images
+
+Make file executable
 
     chmod +x build-images.sh
 
