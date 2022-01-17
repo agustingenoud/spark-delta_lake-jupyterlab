@@ -2,7 +2,7 @@
 
 Build from scratch docker images from the Dockerfiles.
 Create a Spark cluster (1 Main + 2 Workers) and a Jupyter Lab interface.
-Based on the great [article](https://towardsdatascience.com/apache-spark-cluster-on-docker-ft-a-juyterlab-interface-418383c95445) of André Perez. I updated the versions of openjdk to 11, and spark (3.2.0) & hadoop compatibility.
+Based on the great [article](https://towardsdatascience.com/apache-spark-cluster-on-docker-ft-a-juyterlab-interface-418383c95445) of André Perez. I updated the versions of openjdk to 11, spark (3.2.0) & hadoop compatibility.
 
 ### Go to a terminal
 
