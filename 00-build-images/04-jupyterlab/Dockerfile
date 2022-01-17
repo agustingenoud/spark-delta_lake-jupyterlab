@@ -1,13 +1,15 @@
-FROM cluster-base
+FROM cluster-base-t
 
 # -- Layer: JupyterLab
 
-ARG spark_version=3.0.0
+ARG spark_version=3.2.0
 ARG jupyterlab_version=2.1.5
 
 RUN apt-get update -y && \
-    apt-get install -y python3-pip && \
-    pip3 install wget pyspark==${spark_version} jupyterlab==${jupyterlab_version}
+    apt-get install -y python3-pip
+
+RUN pip3 install wget pyspark==${spark_version} jupyterlab==${jupyterlab_version}
+
 
 # -- Runtime
 
