@@ -1,4 +1,4 @@
-FROM cluster-base-t
+FROM cluster-base
 
 # -- Layer: Apache Spark
 
