@@ -10,13 +10,13 @@ JUPYTERLAB_VERSION="2.1.5"
 
 docker build \
   -f ./00-cluster-base/Dockerfile \
-  -t cluster-base .
+  -t cluster-base-delta .
 
 docker build \
   --build-arg spark_version="${SPARK_VERSION}" \
   --build-arg hadoop_version="${HADOOP_VERSION}" \
   -f ./01-spark-base/Dockerfile \
-  -t spark-base .
+  -t spark-base-delta .
 
 docker build \
   -f ./02-spark-master/Dockerfile \
@@ -24,10 +24,10 @@ docker build \
 
 docker build \
   -f ./03-spark-worker/Dockerfile \
-  -t spark-worker .
+  -t spark-worker-delta .
 
 docker build \
   --build-arg spark_version="${SPARK_VERSION}" \
   --build-arg jupyterlab_version="${JUPYTERLAB_VERSION}" \
   -f ./04-jupyterlab/Dockerfile \
-  -t jupyterlab .
+  -t jupyterlab-delta .

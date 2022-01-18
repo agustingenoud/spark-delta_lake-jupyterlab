@@ -1,4 +1,4 @@
-FROM spark-base
+FROM spark-base-delta
 
 # -- Runtime
 

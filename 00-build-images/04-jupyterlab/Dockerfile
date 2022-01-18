@@ -1,4 +1,4 @@
-FROM spark-base-t
+FROM spark-base-delta
 
 # -- Layer: JupyterLab
 

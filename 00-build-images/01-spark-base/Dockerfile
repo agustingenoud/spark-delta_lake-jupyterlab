@@ -1,4 +1,4 @@
-FROM cluster-base
+FROM cluster-base-delta
 
 # -- Layer: Apache Spark
 
