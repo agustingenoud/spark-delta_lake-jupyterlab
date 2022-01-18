@@ -6,7 +6,7 @@ ARG spark_version=3.2.0
 ARG hadoop_version=3.2
 
 RUN apt-get update -y && \
-    apt-get install -y curl && \
+    apt-get install -y curl ca-certificates && \
     curl https://archive.apache.org/dist/spark/spark-${spark_version}/spark-${spark_version}-bin-hadoop${hadoop_version}.tgz -o spark.tgz && \
     tar -xf spark.tgz && \
     mv spark-${spark_version}-bin-hadoop${hadoop_version} /usr/bin/ && \
