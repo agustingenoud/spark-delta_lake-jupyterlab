@@ -1,4 +1,6 @@
-# Data Science Docker Environment < Spark/Delta + JupyterLab >
+# Data Science Docker Environment
+
+## < Spark/Delta + JupyterLab >
 
 Build from scratch docker images from the Dockerfiles.
 Create a Spark cluster (1 Main + 2 Workers) and a Jupyter Lab interface.
